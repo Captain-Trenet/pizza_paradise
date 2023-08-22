@@ -1,0 +1,15 @@
+.header {
+  color: #333;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 74px; /* 205.556% */
+  margin: 20px 0;
+}
+.cardsContainer {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 35px;
+}

@@ -1,0 +1,100 @@
+@import "/src/mixins/mixins.scss";
+
+.container {
+  height: calc(60vh - 80px);
+  width: 100%;
+  background-color: black;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/margherita-pizza.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 90%;
+  margin: auto;
+  border-radius: 30px;
+
+  @include lg {
+    height: calc(70vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.textContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  padding: 0 10%;
+  font-weight: 700;
+  letter-spacing: 1.35px;
+
+  @include lg {
+    text-align: center;
+  }
+}
+
+.headingPrimary {
+  color: #ffffff;
+  font-size: 72px;
+  margin-bottom: 10px;
+
+  @include lg {
+    font-size: 60px;
+  }
+
+  @include sm {
+    font-size: 40px;
+  }
+
+  span {
+    color: #ffffff;
+    font-size: 72px;
+    font-weight: 700;
+    color: #cf3031;
+    -webkit-text-stroke: 1px #fff;
+
+    @include lg {
+      font-size: 60px;
+    }
+
+    @include sm {
+      font-size: 40px;
+    }
+  }
+}
+
+.headingSecondary {
+  color: #ffffff;
+  font-size: 36px;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @include lg {
+    font-size: 26px;
+  }
+
+  @include sm {
+    font-size: 20px;
+  }
+}
+
+.btn {
+  background-color: #f44a25;
+  padding: 11px 24px 11px 24px;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px 0;
+  font-weight: 400;
+
+  @include lg {
+    align-self: center;
+  }
+}

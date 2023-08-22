@@ -1,0 +1,46 @@
+.container {
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid #bdbdbd;
+  background: #fffdfd;
+  overflow: hidden;
+  .imgContainer {
+    position: relative;
+    width: 100%;
+    height: 250px;
+  }
+
+  .textContainer {
+    padding: 16px;
+    .title {
+      color: #000;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px; /* 133.333% */
+      margin: 10px 0;
+    }
+
+    .desc {
+      color: #333;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 18px; /* 128.571% */
+    }
+
+    .price {
+      color: #333;
+      font-size: 23.752px;
+      font-weight: 600;
+      line-height: 31.669px; /* 133.333% */
+      margin: 20px 0;
+    }
+
+    .button {
+      border-radius: 25px;
+      background-color: #f44a25;
+      padding: 11px 24px;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}

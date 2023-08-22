@@ -1,0 +1,9 @@
+@import "/src/mixins/mixins.scss";
+
+.menu {
+  display: none;
+
+  @include lg {
+    display: block;
+  }
+}

@@ -1,0 +1,25 @@
+.container {
+  width: 90%;
+  margin: auto;
+  height: calc(100vh - 80px);
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 12px;
+
+    tbody {
+      tr {
+        // background-color: #f2f2f2;
+        background-color: rgb(254 242 242 / 1);
+
+        &:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+      }
+      td {
+        padding: 16px 8px;
+        border-radius: 6px;
+      }
+    }
+  }
+}
